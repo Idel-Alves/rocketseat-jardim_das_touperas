@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.jardim {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/Assets/fundo.svg);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toupeiras {
+    display: grid;
+    grid-template-areas: 
+    "A B C D"
+    "E F G H"
+    "I J K L";
+    margin-top: 100px;
+    gap: 30px;
+    position: absolute;
+}
+
+.toupeira {
+    background-image: url(/Assets/toupeira6.svg);
+    width: 223px;
+    height: 169px;
+}
+
+    .toupeiras div:nth-child(1) {
+        grid-area: A;
+        animation: toupeira 1200ms 350ms;
+    }
+    .toupeiras div:nth-child(2) {
+        grid-area: B;
+    }
+    .toupeiras div:nth-child(3) {
+        grid-area: C;
+    }
+    .toupeiras div:nth-child(4) {
+        grid-area: D;
+        animation: toupeira 1200ms 2000ms;
+    }
+    .toupeiras div:nth-child(5) {
+        grid-area: E;
+    }
+    .toupeiras div:nth-child(6) {
+        grid-area: F;
+        animation: toupeira 1200ms 4000ms;
+    }
+    .toupeiras div:nth-child(7) {
+        grid-area: G;
+    }
+    .toupeiras div:nth-child(8) {
+        grid-area: H;
+        animation: toupeira 1200ms 6000ms;
+    }
+    .toupeiras div:nth-child(9) {
+        grid-area: I;
+    }
+    .toupeiras div:nth-child(10) {
+        grid-area: J;
+    }
+    .toupeiras div:nth-child(11) {
+        grid-area: K;
+        animation: toupeira 1200ms 8000ms;
+    }
+    .toupeiras div:nth-child(12) {
+        grid-area: L;
+    }
+
+ 
+    @keyframes toupeira {
+        0% {
+            background-image: url(/Assets/toupeira1.svg);
+        }
+        20% {
+            background-image: url(/Assets/toupeira2.svg);
+        }
+        40% {
+            background-image: url(/Assets/toupeira3.svg);
+        }
+        60% {
+            background-image: url(/Assets/toupeira4.svg);
+        }
+        80% {
+            background-image: url(/Assets/toupeira5.svg);
+        }
+        100% {
+            background-image: url(/Assets/toupeira6.svg);
+        }
+    }
